@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body,
+main,
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* Tudo está dentro desse main, menos o footer */
+main{
+    width: 30%;
+    height: 70%;
+    align-items: center;
+}
+
+h1{
+    color: rgb(37, 37, 37);
+}
+
+/* Form com botão e input */
+form{
+    margin-top: 5%;
+    padding-bottom: 10%;
+    height: auto;
+    width: 90%;
+    border-radius: 5%;
+    background: linear-gradient(to top, rgb(60, 60, 60), rgb(80, 80, 80), rgb(100, 100, 100));
+    align-items: center;
+}
+
+form > input:first-child{
+margin-top: 10%;
+}
+
+form > input{
+    border-radius: 0.7vw;
+    width: 55%;
+    height: 10%;
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+ /* Aonde estão os botões de operação */
+form > div{
+    display: flex;
+    gap: 5vw;
+}
+
+input[type="button"]{
+    background: linear-gradient(to top, rgb(100, 100, 100), rgb(150, 150, 150), rgb(200, 200, 200));
+    width: 6vw;
+    height: 6vw;
+    border-radius: 10%;
+    font-size: 4em;
+    margin-top: 15%;
+}
+
+#hist{
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+.history{
+    margin-top: 1%;
+    text-align: start;
+}
+
+h1,
+#hist{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
